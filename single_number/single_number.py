@@ -4,8 +4,14 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
+    sin_num = []
 
-    pass
+    for x in arr:
+        if x not in sin_num:
+            sin_num.append(x)
+        else:
+            sin_num.remove(x)
+    return sin_num[0]
 
 
 if __name__ == '__main__':
